@@ -2,6 +2,9 @@ package com.pandora.www;
 
 
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
@@ -24,8 +27,8 @@ public class Picture_convert_figer_gray_process {
 
     public static void main(String[] args) throws IOException {
 
-        String imageInputPath = "F:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput\\image.jpg";
-        String imageOutputPath = "F:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureOutput\\image1.jpg";
+        String imageInputPath = "E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput\\image.jpg";
+        String imageOutputPath = "E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureOutput\\image1.jpg";
 
         ImageIO.write(imageToGray(imageInputPath), "jpg", new File(imageOutputPath));
 
@@ -90,7 +93,7 @@ public class Picture_convert_figer_gray_process {
      * @throws IOException
      */
     public static BufferedImage imageToGray(String imagePath) throws IOException {
-        FileWriter fileWriter = new FileWriter("F:\\code\\IdeaProjects\\pictrue-convert\\src\\fileOutput\\output1.txt");
+        FileWriter fileWriter = new FileWriter("E:\\code\\IdeaProjects\\pictrue-convert\\src\\fileOutput\\output1.txt");
 
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
