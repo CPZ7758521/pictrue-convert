@@ -19,8 +19,8 @@ public class Pictrue_to_vedio {
     private static Logger LOG = LoggerFactory.getLogger(Pictrue_to_vedio.class);
 
     public static void main(String[] args) throws FrameRecorder.Exception {
-        Map<Integer, File> fileMap = fileToMap("F:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput");
-        createMp4("F:\\code\\IdeaProjects\\pictrue-convert\\src\\videoOutput\\video.mp4", fileMap, 1920, 1080);
+        Map<Integer, File> fileMap = fileToMap("E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput");
+        createMp4("E:\\code\\IdeaProjects\\pictrue-convert\\src\\videoOutput\\video.mp4", fileMap, 1920, 1080);
     }
 
     public static Map<Integer, File> fileToMap(String filePath) {
