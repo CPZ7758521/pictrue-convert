@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Pictrue_to_vedio {
-    private static final Logger LOG = LoggerFactory.getLogger(Pictrue_to_vedio.class);
+    private static Logger LOG = LoggerFactory.getLogger(Pictrue_to_vedio.class);
 
     public static void main(String[] args) throws FrameRecorder.Exception {
         Map<Integer, File> fileMap = fileToMap("F:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput");
