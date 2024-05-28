@@ -27,7 +27,7 @@ public class Picture_convert_figer_gray_process {
 
     public static void main(String[] args) throws IOException {
 
-        String imageInputPath = "E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput\\image.jpg";
+        String imageInputPath = "E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureInput\\img.png";
         String imageOutputPath = "E:\\code\\IdeaProjects\\pictrue-convert\\src\\pictureOutput\\image1.jpg";
 
         ImageIO.write(imageToGray(imageInputPath), "jpg", new File(imageOutputPath));
